@@ -24,8 +24,14 @@ $ cd personal-website
 $ npm start
 ```
 
-### Chapter 2: GitHub Version Control
+### Chapter 3: GitHub Version Control
+
+* Login to your Github account. If you do not have one yet, create one.
+* Click on the + icon to create a new repository. Give it the name **personal-website**
+* Execute the commands from the Github new repository page.
 
 ```sh
-
+$ git remote add origin https://github.com/soosap/personal-website.git
+$ git branch -M main
+$ git push -u origin main
 ```
