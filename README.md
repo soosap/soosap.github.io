@@ -36,10 +36,40 @@ $ git branch -M main
 $ git push -u origin main
 ```
 
-* Add `homepage` key to package.json using your Github Pages URL as the value, i.e. https://soosap.github.io
-* Navigate to https://<your-username>.github.io/ (https://soosap.github.io)
 
-### Chapter 4: Adding an Avatar that looks like you
+### Chapter 4: Deploy your website to Github Pages
+
+1. Install npm module gh-pages
+```sh
+$ npm install gh-pages
+```
+
+2. Add `homepage` key to package.json using your Github Pages URL as the value
+```diff
+{
+  "name": "personal-website",
+  "version": "0.1.0",
++ "homepage": "https://soosap.github.io",
+  "private": false,
+```
+
+3. Add `deploy` and `predeploy` scripts to your package.json file
+```diff
+"scripts": {
++   "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+```
+
+4. Fire the `deploy` command whenever you are ready to update your live website
+```sh
+$ npm run deploy
+```
+
+5. Navigate to https://<your-username>.github.io/ (i.e. https://soosap.github.io)
+
+### Chapter 5: Adding an Avatar that looks like you
 
 
 
