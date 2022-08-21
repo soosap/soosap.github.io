@@ -57,7 +57,7 @@ $ npm install gh-pages
 ```diff
 "scripts": {
 +   "predeploy": "npm run build",
-+   "deploy": "gh-pages -d build",
++   "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
 ```
@@ -67,7 +67,9 @@ $ npm install gh-pages
 $ npm run deploy
 ```
 
-5. Navigate to https://<your-username>.github.io/ (i.e. https://soosap.github.io)
+5. Navigate to Github > Settings > Pages and select `gh-pages` as the **branch** option
+
+6. Navigate to https://<your-username>.github.io/ to see your app deployed (i.e. https://soosap.github.io)
 
 ### Chapter 5: Adding an Avatar that looks like you
 
