@@ -71,6 +71,18 @@ $ npm run deploy
 
 6. Navigate to https://<your-username>.github.io/ to see your app deployed (i.e. https://soosap.github.io)
 
+### Chapter 5: Set up directory structure
+
+1. Delete `App.test.tsx` as we are not using it
+2. Create `/src/components` directory
+3. Break down App into individual components
+
+### Chapter 6: Anatomy of a React component
+
+1. Create a new directory under the `/src/components` directory and name is exactly as the component, i.e. Header
+2. `npm install clsx`
+
+
 ### Chapter 5: Adding an Avatar that looks like you
 
 
