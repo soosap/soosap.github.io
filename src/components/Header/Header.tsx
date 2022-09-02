@@ -1,17 +1,19 @@
-import clsx from 'clsx'
-import styles from './Header.module.scss'
+import clsx from 'clsx';
+import styles from './Header.module.scss';
+import LanguageSwitch from './LanguageSwitch';
+import ThemeSwitch from './ThemeSwitch';
 
-interface Props {
-  className?: string
+export interface Props {
+	className?: string;
 }
 
-function Header({ className }: Props) {
-  return (
-    <header className={clsx(styles.wrapper, className)}>
-      <a href="/">English</a>
-      <a href="/"> தமிழ்</a>
-    </header>
-  )
-} 
+const Header = ({ className }: Props) => {
+	return (
+		<div className={clsx(styles.container, className)}>
+			<ThemeSwitch />
+			<LanguageSwitch />
+		</div>
+	);
+};
 
-export default Header
+export default Header;
