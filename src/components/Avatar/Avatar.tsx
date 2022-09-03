@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import { useTranslation } from 'react-i18next'
 import styles from './Avatar.module.scss';
 
 export interface Props {
@@ -6,9 +7,12 @@ export interface Props {
 }
 
 const Avatar = ({ className }: Props) => {
+  const { t } = useTranslation()
+
   return (
     <div className={clsx(styles.container, className)}>
-      <span>Avatar</span>
+      <span>AvatarImage</span>
+      <div>{t('name')}</div>
     </div>
   );
 };
