@@ -1,18 +1,19 @@
-import clsx from 'clsx';
-import LanguageSwitch from './LanguageSwitch';
-import ThemeSwitch from './ThemeSwitch';
+import clsx from 'clsx'
+import LanguageSwitch from './LanguageSwitch'
+import ThemeSwitch from './ThemeSwitch'
 
 export interface Props {
-	className?: string;
+  className?: string
 }
 
 const Header = ({ className }: Props) => {
-	return (
-		<div className={clsx(className)}>
-			<ThemeSwitch />
-			<LanguageSwitch />
-		</div>
-	);
-};
+  return (
+    <div className={clsx(className)}>
+      <ThemeSwitch />
+      <LanguageSwitch />
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    </div>
+  )
+}
 
-export default Header;
+export default Header

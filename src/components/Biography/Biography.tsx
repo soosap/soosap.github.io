@@ -9,7 +9,7 @@ const Biography = ({ className }: Props) => {
     <div className={clsx('flex', className)}>
       <span>Biography</span>
     </div>
-  );
-};
+  )
+}
 
-export default Biography;
+export default Biography
