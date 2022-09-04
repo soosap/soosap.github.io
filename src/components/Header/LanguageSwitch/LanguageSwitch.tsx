@@ -1,5 +1,4 @@
 import clsx from 'clsx'
-import styles from './LanguageSwitch.module.scss';
 
 export interface Props {
   className?: string
@@ -7,7 +6,7 @@ export interface Props {
 
 const LanguageSwitch = ({ className }: Props) => {
   return (
-    <div className={clsx(styles.container, className)}>
+    <div className={clsx(className)}>
       <span>LanguageSwitch</span>
     </div>
   );
