@@ -11,6 +11,7 @@
     "@types/node": "^16.11.52",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "bulma": "^0.9.4",
     "clsx": "^1.2.1",
     "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
@@ -24,10 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.8",
-    "postcss": "^8.4.16",
     "prettier": "^2.7.1",
-    "tailwindcss": "^3.1.8"
+    "sass": "^1.54.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,8 +34,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "tailwindcss": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
