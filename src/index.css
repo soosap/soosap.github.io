@@ -6,14 +6,15 @@
 }
 
 [data-theme='dark'] {
-  --textColor: #333;
-  --bgColor: #eee;
-  --linkColor: cornflowerblue;
+  --textColor: #eee;
+  --bgColor: #333;
+  --linkColor: lightblue;
 }
 
 body {
   background-color: var(--bgColor);
   color: var(--textColor);
+  min-height: 100vh;
 }
 
 a {

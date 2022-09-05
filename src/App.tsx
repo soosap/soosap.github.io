@@ -1,4 +1,3 @@
-import 'bulma/css/bulma.min.css'
 import './App.css'
 import './i18n'
 import Header from './components/Header'

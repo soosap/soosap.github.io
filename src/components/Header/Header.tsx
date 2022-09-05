@@ -11,7 +11,6 @@ const Header = ({ className }: Props) => {
     <div className={clsx(className)}>
       <ThemeSwitch />
       <LanguageSwitch />
-      <button className="button">Button</button>
     </div>
   )
 }
