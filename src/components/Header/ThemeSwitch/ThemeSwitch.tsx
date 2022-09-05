@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import styles from './ThemeSwitch.module.scss'
 
 export interface Props {
   className?: string
@@ -6,15 +7,13 @@ export interface Props {
 
 const ThemeSwitch = ({ className }: Props) => {
   return (
-    <div className={clsx(className)}>
-      <input
-        type="checkbox"
-        name="toggle"
-        id="toggle"
-        className={clsx(
-          'toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer'
-        )}
-      />
+    <div className={clsx(styles.wrapper, className)}>
+      <span className={styles.icon}>🌞</span>
+      <label className={styles.switch} htmlFor="switch">
+        <input id="switch" type="checkbox" />
+        <div className={styles.slider} />
+      </label>
+      <span className={styles.icon}>🌒</span>
     </div>
   )
 }

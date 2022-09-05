@@ -11,7 +11,7 @@ const Header = ({ className }: Props) => {
     <div className={clsx(className)}>
       <ThemeSwitch />
       <LanguageSwitch />
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <button className="button">Button</button>
     </div>
   )
 }

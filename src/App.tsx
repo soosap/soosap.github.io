@@ -1,7 +1,8 @@
-import './App.css';
+import 'bulma/css/bulma.min.css'
+import './App.css'
 import './i18n'
-import Header from './components/Header';
-import Avatar from './components/Avatar';
+import Header from './components/Header'
+import Avatar from './components/Avatar'
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Header />
       <Avatar />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

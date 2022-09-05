@@ -1,0 +1,21 @@
+// Light mode
+:root {
+  --textColor: #333;
+  --bgColor: #eee;
+  --linkColor: cornflowerblue;
+}
+
+[data-theme='dark'] {
+  --textColor: #333;
+  --bgColor: #eee;
+  --linkColor: cornflowerblue;
+}
+
+body {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+}
+
+a {
+  color: var(--linkColor);
+}
