@@ -1,6 +1,7 @@
 {
-  "name": "பிரசாத் சூ.",
-  "biography": "",
+  "Hero": {
+    "title": "பிரசாத் சூ."
+  },
   "LanguageSwitch": {
     "english": "ஆங்கிலம்",
     "tamil": "தமிழ்"

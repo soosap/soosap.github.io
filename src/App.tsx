@@ -1,12 +1,16 @@
 import './i18n'
 import Header from './components/Header'
-import Avatar from './components/Avatar'
+import Hero from './components/Hero'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="font-system">
+    <div className="font-system flex flex-col min-h-screen">
       <Header />
-      <Avatar />
+      <div className="flex-1">
+        <Hero />
+      </div>
+      <Footer />
     </div>
   )
 }

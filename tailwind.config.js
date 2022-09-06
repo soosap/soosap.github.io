@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         system: ['"Noto Sans"', '"Noto Sans Tamil"', 'sans-serif'],
+        accent: ['"Carter One"', '"Noto Sans Tamil"', 'cursive'],
       },
     },
   },

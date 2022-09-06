@@ -11,7 +11,6 @@
     "prefix": "reactComponent",
     "body": [
       "import clsx from 'clsx'",
-      "import styles from './$1.module.scss';",
       "",
       "export interface Props {",
       "  className?: string",
@@ -19,13 +18,13 @@
       "",
       "const $1 = ({ className }: Props) => {",
       "  return (",
-      "    <div className={clsx(styles.container, className)}>",
+      "    <div className={clsx(className)}>",
       "      <span>$1</span>",
       "    </div>",
-      "  );",
-      "};",
+      "  )",
+      "}",
       "",
-      "export default $1;",
+      "export default $1",
       ""
     ]
   }
