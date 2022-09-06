@@ -24,13 +24,13 @@ const LanguageSwitch = ({ className }: Props) => {
           onClick={() => changeLanguage('en')}
           className={btnClassName('en')}
         >
-          {t('languages.english')}
+          {t('LanguageSwitch.english')}
         </button>
         <button
           onClick={() => changeLanguage('ta')}
           className={btnClassName('ta')}
         >
-          {t('languages.tamil')}
+          {t('LanguageSwitch.tamil')}
         </button>
       </div>
     </div>
