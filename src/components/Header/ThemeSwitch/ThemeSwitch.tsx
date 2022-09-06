@@ -26,7 +26,13 @@ const ThemeSwitch = ({ className }: Props) => {
   }
 
   return (
-    <div className={clsx(styles.wrapper, className)}>
+    <div
+      className={clsx(
+        styles.wrapper,
+        className,
+        'flex flex-1 items-center gap-2'
+      )}
+    >
       <span className={styles.icon}>🌞</span>
       <label className={styles.switch} htmlFor="switch">
         <input id="switch" type="checkbox" onChange={handleSwitch} />
