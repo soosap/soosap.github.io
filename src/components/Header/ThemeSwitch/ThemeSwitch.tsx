@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { ChangeEventHandler } from 'react'
+import { ChangeEventHandler, useEffect } from 'react'
 import styles from './ThemeSwitch.module.scss'
 
 export interface Props {
@@ -7,6 +7,15 @@ export interface Props {
 }
 
 const ThemeSwitch = ({ className }: Props) => {
+  useEffect(() => {
+    const theme = localStorage.getItem('theme')
+    if (!theme) {
+      setLight()
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+  }, [])
+
   const setDark = () => {
     localStorage.setItem('theme', 'dark')
     document.documentElement.setAttribute('data-theme', 'dark')

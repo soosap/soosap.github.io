@@ -8,7 +8,12 @@ export interface Props {
 
 const Header = ({ className }: Props) => {
   return (
-    <div className={clsx(className, 'container flex mx-auto px-4 py-2')}>
+    <div
+      className={clsx(
+        className,
+        'container flex mx-auto px-4 py-2 sm:py-4 md:py-6'
+      )}
+    >
       <ThemeSwitch />
       <LanguageSwitch />
     </div>

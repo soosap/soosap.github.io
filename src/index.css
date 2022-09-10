@@ -3,15 +3,16 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Noto+Sans+Tamil:wght@400;800&family=Noto+Sans:wght@400;800&display=swap');
 
-// Light mode
-:root {
+[data-theme='light'] {
   --textColor: #333;
-  --bgColor: #eee;
+  --titleColor: #b4b4b4;
+  --bgColor: #fafafa;
   --linkColor: cornflowerblue;
 }
 
 [data-theme='dark'] {
   --textColor: #eee;
+  --titleColor: #eee;
   --bgColor: #333;
   --linkColor: lightblue;
 }
@@ -24,4 +25,8 @@ body {
 
 a {
   color: var(--linkColor);
+}
+
+h1 {
+  color: var(--titleColor);
 }

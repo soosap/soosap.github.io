@@ -9,17 +9,17 @@ const Title = ({ className }: Props) => {
   const { t } = useTranslation()
 
   return (
-    <div
+    <h1
       className={clsx(
         className,
         'flex justify-center',
         'font-accent font-bold',
-        'text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl',
-        '-rotate-3'
+        'text-5xl md:text-6xl lg:text-7xl',
+        '-rotate-3 -translate-y-10 md:-translate-y-15 lg:-translate-y-20'
       )}
     >
       {t('Hero.title')}
-    </div>
+    </h1>
   )
 }
 
