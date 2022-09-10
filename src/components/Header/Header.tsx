@@ -11,7 +11,7 @@ const Header = ({ className }: Props) => {
     <div
       className={clsx(
         className,
-        'container flex mx-auto px-4 py-2 sm:py-4 md:py-6'
+        'container flex mx-auto px-4 pt-4 sm:pt-6 pb-8'
       )}
     >
       <ThemeSwitch />

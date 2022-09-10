@@ -1,6 +1,11 @@
 {
   "Hero": {
-    "title": "Prasath S."
+    "title": "Prasath S.",
+    "subtitle": {
+      "reactDev": "React developer",
+      "cricketPlayer": "கிரிக்கெட் வீரர்",
+      "hobbyPhotographer": "Hobby photographer"
+    }
   },
   "LanguageSwitch": {
     "english": "English",
