@@ -15,7 +15,7 @@ const Title = ({ className }: Props) => {
         'flex justify-center',
         'font-accent font-bold',
         'text-5xl md:text-6xl lg:text-7xl',
-        '-rotate-3 -translate-y-10 md:-translate-y-15 lg:-translate-y-20'
+        '-rotate-3 -translate-y-10 md:-translate-y-15 lg:-translate-y-10'
       )}
     >
       {t('Hero.title')}
