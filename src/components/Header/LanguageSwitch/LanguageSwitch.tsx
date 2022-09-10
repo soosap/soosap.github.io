@@ -19,7 +19,7 @@ const LanguageSwitch = ({ className }: Props) => {
 
   return (
     <div className={clsx(className, 'flex items-center')}>
-      <div className={clsx('flex gap-2')}>
+      <div className={clsx('flex md:gap-2')}>
         <button
           onClick={() => changeLanguage('en')}
           className={btnClassName('en')}

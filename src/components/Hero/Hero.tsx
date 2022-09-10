@@ -16,7 +16,7 @@ const Hero = ({ className }: Props) => {
       <Avatar />
       <Title />
       <Typed
-        className="flex justify-center text-2xl"
+        className="flex justify-center text-2xl mx-2 text-center h-8"
         strings={[
           t('Hero.subtitle.reactDev'),
           t('Hero.subtitle.cricketPlayer'),
