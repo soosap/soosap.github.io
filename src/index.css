@@ -5,16 +5,16 @@
 
 [data-theme='light'] {
   --textColor: #333;
-  --titleColor: #b4b4b4;
+  --titleColor: #333;
   --bgColor: #fafafa;
-  --linkColor: cornflowerblue;
+  --linkColor: #01a2d8;
 }
 
 [data-theme='dark'] {
   --textColor: #eee;
   --titleColor: #eee;
   --bgColor: #333;
-  --linkColor: lightblue;
+  --linkColor: #01a2d8;
 }
 
 body {
@@ -29,4 +29,9 @@ a {
 
 h1 {
   color: var(--titleColor);
+}
+
+footer {
+  background-color: var(--textColor);
+  color: var(--bgColor);
 }

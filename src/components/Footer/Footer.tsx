@@ -1,4 +1,4 @@
-import clsx from 'clsx'
+import SocialMedia from './SocialMedia'
 
 export interface Props {
   className?: string
@@ -6,22 +6,32 @@ export interface Props {
 
 const Footer = ({ className }: Props) => {
   return (
-    <div className={clsx(className, 'container mx-auto px-4 py-8')}>
-      <div>
-        <div>UKI Coding School</div>
-        <div>Cohorte 2022</div>
-        <div>XYZ Road 199</div>
-        <div>Jaffna, Sri Lanka</div>
+    <footer className={className}>
+      <div className="container mx-auto px-8 lg:px-16 py-8 gap-8 flex max-w-4xl flex-wrap">
+        <div className="w-24 h-36 flex items-center min-w-fit flex-1 sm:flex-none">
+          <img
+            alt="Yarl IT Hub Logo"
+            src="/yarl-it-hub-logo.png"
+            className="h-24"
+          />
+        </div>
+        <div className="w-36 h-36 flex justify-center items-center">
+          <img
+            alt="Uki Coding School Logo"
+            src="/uki-logo.png"
+            className="h-min"
+          />
+        </div>
+        <div className="flex-1 pt-8 min-w-fit">
+          <div>Uki Coding School - Jaffna Center</div>
+          <div>124 Rasavinthoddam Rd</div>
+          <div>Class of 2022</div>
+        </div>
+        <div className="pt-8">
+          <SocialMedia />
+        </div>
       </div>
-      <ul>
-        <li>
-          <a href="https://www.github.com/soosap">Github</a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/soosap">Facebook</a>
-        </li>
-      </ul>
-    </div>
+    </footer>
   )
 }
 

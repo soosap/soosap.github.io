@@ -9,7 +9,7 @@ const Avatar = ({ className }: Props) => {
     <div
       className={clsx('mx-auto flex justify-center w-48 lg:w-56', className)}
     >
-      <img alt="Profile avatar" src="/prasath-profile-1.png" />
+      <img alt="Profile avatar" src="/prasath-profile-3.png" />
     </div>
   )
 }
