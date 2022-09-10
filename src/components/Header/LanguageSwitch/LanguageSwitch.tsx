@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useCallback } from 'react'
 import clsx from 'clsx'
 import { useTranslation } from 'react-i18next'
 
@@ -9,15 +9,18 @@ export interface Props {
 const LanguageSwitch = ({ className }: Props) => {
   const { t, i18n } = useTranslation()
 
+  const changeLanguage = useCallback(
+    (uiLanguage: string) => {
+      localStorage.setItem('uiLanguage', uiLanguage)
+      i18n.changeLanguage(uiLanguage)
+    },
+    [i18n]
+  )
+
   useEffect(() => {
     const uiLanguage = localStorage.getItem('uiLanguage') ?? 'en'
     changeLanguage(uiLanguage)
-  }, [])
-
-  const changeLanguage = (uiLanguage: string) => {
-    localStorage.setItem('uiLanguage', uiLanguage)
-    i18n.changeLanguage(uiLanguage)
-  }
+  }, [changeLanguage])
 
   const btnClassName = (uiLanguage: string) =>
     clsx('px-4 py-1 rounded', {

@@ -1,6 +1,7 @@
 import './i18n'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import Biography from './components/Biography'
 import Footer from './components/Footer'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <div className="flex-1">
         <Hero />
+        <Biography />
       </div>
       <Footer />
     </div>
