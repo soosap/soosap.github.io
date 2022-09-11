@@ -22,7 +22,7 @@ const Hero = ({ className }: Props) => {
           t('Hero.subtitle.cricketPlayer'),
           t('Hero.subtitle.hobbyPhotographer'),
         ]}
-        typeSpeed={70}
+        typeSpeed={120}
         backSpeed={40}
         loop
       />
