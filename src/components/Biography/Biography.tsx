@@ -13,7 +13,7 @@ const Biography = ({ className }: Props) => {
       className={clsx('flex container my-8 mx-auto p-4 max-w-lg', className)}
     >
       <div className={clsx('border b-2 rounded p-4')}>
-        <p className="pb-4">
+        <p className="pb-8">
           <span>{t('Biography.bio1')}</span>
           <span>{t('Biography.bio2')}</span>
           <strong>{t('Biography.bio3')}</strong>

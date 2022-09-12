@@ -61,6 +61,11 @@ const ThemeSwitch = ({ className }: Props) => {
         <div className={styles.slider} />
       </label>
       <span className={styles.icon}>🌒</span>
+      {theme === 'light' ? (
+        <div>Light Theme activated</div>
+      ) : (
+        <div>Dark theme activated</div>
+      )}
     </div>
   )
 }

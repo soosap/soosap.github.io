@@ -16,14 +16,17 @@ const Hero = ({ className }: Props) => {
       <Avatar />
       <Title />
       <Typed
-        className="flex justify-center text-2xl mx-2 text-center h-6"
         strings={[
           t('Hero.subtitle.reactDev'),
           t('Hero.subtitle.cricketPlayer'),
           t('Hero.subtitle.hobbyPhotographer'),
         ]}
-        typeSpeed={120}
-        backSpeed={40}
+        typeSpeed={30}
+        className={clsx(
+          'flex justify-center',
+          'text-xl md:text-3xl xl:text-4xl',
+          'text-yellow-600 md:text-emerald-800'
+        )}
         loop
       />
     </div>

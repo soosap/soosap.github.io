@@ -17,6 +17,13 @@
   --linkColor: #01a2d8;
 }
 
+[data-theme='yellow'] {
+  --textColor: #eee;
+  --titleColor: #eee;
+  --bgColor: yellow;
+  --linkColor: #01a2d8;
+}
+
 body {
   background-color: var(--bgColor);
   color: var(--textColor);
